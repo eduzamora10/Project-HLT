@@ -29,29 +29,28 @@ Code for Project (CS 4395)
 
 **generate_hard_langauges.py**
 
-    Here we are choosing the 20 most difficult languages each model faced by Logistic Regresison, SVM, and Naive Bayes. 
+    This script identifies the 20 most difficult languages for each model (Logistic Regression, SVM, and Naive Bayes) based on performance.
 
-    This will be needed to create our hard test set. 
+    These languages are used to help define the "hard test set." 
 
     To run:
-    python generate_hard_languages.py
+        python generate_hard_languages.py
 
 **generate_hard_test_set.py**
 
-    In this script, we are combining all hardest languages from all models into one test set.
+    This script combines the hardest languages (identified from each model) into one unified test set.
 
     To run:
-    python generate_hard_test_set.py
+        python generate_hard_test_set.py
 
 **evaluate_hard_dataset.py**
 
-    Here we do the exact same thing we did in program.py, just evaluating the classic models with the hard test set we created.
+    This script evaluates the previously trained classic models (Logistic Regression, SVM, Naive Bayes) on the newly created hard test set.
 
-    To run Logistic Regression model:
-    python evaluate_hard_dataset.py logistic
+    It reuses the saved models, vectorizer, and label encoder from program.py.
 
-    To run SVM model:
-    python evaluate_hard_dataset.py svm
+    To run:
+        python evaluate_hard_dataset.py logistic   # Evaluate Logistic Regression
+        python evaluate_hard_dataset.py svm        # Evaluate SVM
+        python evaluate_hard_dataset.py nb         # Evaluate Naive Bayes
 
-    To run Naive Bayes model:
-    python evaluate_hard_dataset.py nb
