@@ -1,6 +1,13 @@
 import os
 import pandas as pd
+import numpy as np
+from sklearn.metrics import accuracy_score
 from sklearn.preprocessing import LabelEncoder
+from datasets import Dataset, DatasetDict
+from transformers import AutoTokenizer
+from transformers import AutoModelForSequenceClassification
+from transformers import TrainingArguments
+from transformers import Trainer
 
 # Path to the folder
 data_dir = "dataset-files"
@@ -38,11 +45,89 @@ label2id = {label: idx for idx, label in enumerate(label_encoder.classes_)}
 id2label = {idx: label for label, idx in label2id.items()}
 
 # --- Sanity checks ---
-print("Train sample:", x_train[0])
-print("Label (short):", y_train[0], "→ Full:", y_train_full[0])
-print("Encoded label:", y_train_encoded[0])
-print("Train size:", len(x_train), "| Test size:", len(x_test))
-print("Unique labels:", len(label2id))
+# print("Train sample:", x_train[0])
+# print("Label (short):", y_train[0], "→ Full:", y_train_full[0])
+# print("Encoded label:", y_train_encoded[0])
+# print("Train size:", len(x_train), "| Test size:", len(x_test))
+# print("Unique labels:", len(label2id))
 
-print("Example label → id:")
-print(f"{y_train_full[0]} → {y_train_encoded[0]}")
+# print("Example label → id:")
+# print(f"{y_train_full[0]} → {y_train_encoded[0]}")
+
+
+# Construct train and test datasets from raw lists
+train_dataset = Dataset.from_dict({
+    "text": x_train,
+    "label": y_train_encoded
+})
+
+test_dataset = Dataset.from_dict({
+    "text": x_test,
+    "label": y_test_encoded
+})
+
+# Wrap in a DatasetDict to match Hugging Face trainer format
+dataset = DatasetDict({
+    "train": train_dataset,
+    "test": test_dataset
+})
+
+print(dataset['train'][0])
+
+# initialize pretrained model and tokenizer
+model_checkpoint = "distilbert-base-multilingual-cased"
+tokenizer = AutoTokenizer.from_pretrained(model_checkpoint)
+
+# Tokenization function
+def tokenize_function(example):
+    return tokenizer(example["text"], padding="max_length", truncation=True, max_length=128)
+
+# Apply tokenizer to the dataset
+tokenized_dataset = dataset.map(tokenize_function, batched=True)
+
+print(tokenized_dataset["train"][0])
+
+# Initialize model
+model = AutoModelForSequenceClassification.from_pretrained(
+    model_checkpoint,
+    num_labels = len(label_encoder.classes_),
+    id2label = id2label,
+    label2id = label2id
+)
+
+# Set training arguments
+training_args = TrainingArguments(
+    output_dir = "./results",
+    evaluation_strategy = "epoch",
+    save_strategy = "epoch",
+    logging_strategy = "epoch",
+    learning_rate = 2e-5,
+    per_device_train_batch_size = 16,
+    per_device_eval_batch_size = 64,
+    num_train_epochs = 3,
+    weight_decay = 0.01,
+    load_best_model_at_end = True,
+    metric_for_best_model = "accuracy"
+)
+
+# Function to compute accuracy metrics
+def compute_metrics(eval_pred):
+    predictions, labels = eval_pred
+    preds = np.argmax(predictions, axis=1)
+    return {"accuracy": accuracy_score(labels, preds)}
+
+# Initialize Trainer
+trainer = Trainer(
+    model=model,
+    args=training_args,
+    train_dataset=tokenized_dataset["train"],
+    eval_dataset=tokenized_dataset["test"],
+    tokenizer=tokenizer,
+    compute_metrics=compute_metrics
+)
+
+trainer.train() # Train the model
+
+# save model
+trainer.save_model("trained-multilingual-classifier")
+tokenizer.save_pretrained("trained-multilingual-classifier")
