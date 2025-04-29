@@ -1,0 +1,34 @@
+=== Transformers Model Evaluation on Hard Dataset ===
+
+Accuracy: 0.7054
+
+Classification Report:
+                            precision    recall  f1-score   support
+
+                  Achinese       1.00      0.99      0.99       500
+                      Avar       0.97      0.93      0.95       500
+                Belarusian       0.90      0.98      0.94       500
+Belarusian (Taraschkewiza)       0.98      0.89      0.93       500
+                   Bosnian       0.58      0.68      0.63       500
+                 Cantonese       0.98      0.96      0.97       500
+                 Chavacano       0.93      0.83      0.88       500
+                  Croatian       0.63      0.67      0.65       500
+                   Dhivehi       1.00      0.94      0.97       500
+                   English       0.99      0.94      0.96       500
+                     Erzya       0.98      0.92      0.95       500
+                  Japanese       1.00      1.00      1.00       500
+                 Kabardian       1.00      1.00      1.00       500
+                      Komi       0.95      0.91      0.93       500
+              Komi-Permyak       0.94      0.91      0.93       500
+                    Korean       1.00      0.99      0.99       500
+          Literary Chinese       0.97      1.00      0.98       500
+                   Russian       0.00      0.00      0.00       500
+            Serbo-Croatian       0.00      0.00      0.00       500
+                   Spanish       0.00      0.00      0.00       500
+          Standard Chinese       0.00      0.00      0.00       500
+                Wu Chinese       0.00      0.00      0.00       500
+
+                 micro avg       0.92      0.71      0.80     11000
+                 macro avg       0.72      0.71      0.71     11000
+              weighted avg       0.72      0.71      0.71     11000
+

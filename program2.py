@@ -98,7 +98,7 @@ model = AutoModelForSequenceClassification.from_pretrained(
 # Set training arguments
 training_args = TrainingArguments(
     output_dir = "./results",
-    evaluation_strategy = "epoch",
+    eval_strategy = "epoch",
     save_strategy = "epoch",
     logging_strategy = "epoch",
     learning_rate = 2e-5,
