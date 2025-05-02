@@ -1,0 +1,247 @@
+=== DistilBERT Evaluation on Original Test Set ===
+
+Accuracy: 0.9643
+
+Classification Report:
+                            precision    recall  f1-score   support
+
+                  Achinese       0.99      0.99      0.99       500
+                 Afrikaans       1.00      1.00      1.00       500
+                  Albanian       1.00      0.98      0.99       500
+          Alemannic German       0.93      0.94      0.94       500
+                   Amharic       0.79      0.95      0.87       500
+                    Arabic       0.93      0.98      0.96       500
+                 Aragonese       1.00      0.99      0.99       500
+                  Armenian       1.00      0.99      0.99       500
+                 Aromanian       0.98      0.94      0.96       500
+                   Arpitan       0.99      0.96      0.97       500
+                  Assamese       0.99      0.98      0.98       500
+                  Asturian       0.97      0.98      0.97       500
+                      Avar       0.82      0.93      0.87       500
+                    Aymara       0.96      0.96      0.96       500
+               Azerbaijani       1.00      0.98      0.99       500
+                    Banjar       0.96      0.96      0.96       500
+                Banyumasan       0.93      0.84      0.88       500
+                   Bashkir       0.99      0.99      0.99       500
+                    Basque       1.00      1.00      1.00       500
+                  Bavarian       0.84      0.95      0.89       500
+                Belarusian       0.90      0.98      0.93       500
+Belarusian (Taraschkewiza)       0.98      0.89      0.93       500
+                   Bengali       0.96      0.95      0.95       500
+                  Bhojpuri       0.96      0.96      0.96       500
+               Bishnupriya       1.00      0.99      0.99       500
+                    Bokmål       1.00      0.99      0.99       500
+                   Bosnian       0.57      0.68      0.62       500
+                    Breton       1.00      1.00      1.00       500
+                 Bulgarian       0.99      0.97      0.98       500
+                   Burmese       1.00      1.00      1.00       500
+                    Buryat       0.93      0.95      0.94       500
+                 Cantonese       0.93      0.96      0.95       500
+                   Catalan       0.98      0.97      0.97       500
+                   Cebuano       1.00      1.00      1.00       500
+             Central Bikol       0.99      0.97      0.98       500
+             Central Khmer       0.79      0.71      0.75       500
+           Central Kurdish       1.00      1.00      1.00       500
+                 Chavacano       0.88      0.83      0.85       500
+                   Chechen       1.00      0.99      1.00       500
+                  Cherokee       0.96      0.91      0.94       500
+                   Chuvash       0.96      0.98      0.97       500
+         Classical Nahuatl       0.97      0.97      0.97       500
+                   Cornish       1.00      1.00      1.00       500
+                  Corsican       0.97      0.98      0.98       500
+             Crimean Tatar       0.98      0.98      0.98       500
+                  Croatian       0.63      0.67      0.65       500
+                     Czech       1.00      0.99      0.99       500
+                    Danish       0.98      0.99      0.99       500
+                   Dhivehi       0.86      0.94      0.90       500
+                     Dimli       0.96      0.98      0.97       500
+                    Doteli       0.93      0.86      0.89       500
+                     Dutch       0.98      0.99      0.99       500
+              Eastern Mari       0.97      0.97      0.97       500
+           Egyptian Arabic       0.98      0.95      0.96       500
+                   Emilian       0.98      0.97      0.97       500
+                   English       0.74      0.94      0.83       500
+                     Erzya       0.94      0.92      0.93       500
+                 Esperanto       0.98      0.98      0.98       500
+                  Estonian       0.98      0.99      0.98       500
+              Extremaduran       0.98      0.97      0.98       500
+                   Faroese       0.99      1.00      1.00       500
+                Fiji Hindi       0.93      0.93      0.93       500
+                   Finnish       0.98      0.99      0.99       500
+                    French       0.86      0.96      0.91       500
+                  Friulian       0.99      0.96      0.98       500
+                    Gagauz       0.99      0.98      0.98       500
+                  Galician       0.99      0.99      0.99       500
+                  Georgian       1.00      0.99      0.99       500
+                    German       0.92      0.94      0.93       500
+                    Gilaki       0.97      0.93      0.95       500
+                   Guarani       0.99      0.98      0.98       500
+                  Gujarati       0.99      0.99      0.99       500
+            Haitian Creole       1.00      0.99      0.99       500
+             Hakka Chinese       1.00      0.95      0.97       500
+                     Hausa       1.00      0.99      0.99       500
+                    Hebrew       1.00      0.99      1.00       500
+                     Hindi       0.96      0.98      0.97       500
+                 Hungarian       0.99      0.99      0.99       500
+                 Icelandic       1.00      0.99      0.99       500
+                       Ido       0.99      0.99      0.99       500
+                      Igbo       0.97      0.95      0.96       500
+                     Iloko       0.96      0.98      0.97       500
+                Indonesian       0.83      0.92      0.87       500
+               Interlingua       0.99      0.99      0.99       500
+               Interlingue       1.00      0.97      0.98       500
+                     Irish       0.99      0.98      0.98       500
+                   Italian       0.93      0.99      0.96       500
+           Jamaican Patois       0.99      0.99      0.99       500
+                  Japanese       0.99      1.00      0.99       500
+                  Javanese       0.95      0.96      0.96       500
+                 Kabardian       1.00      1.00      1.00       500
+                    Kabyle       0.98      0.97      0.98       500
+                   Kannada       0.98      0.98      0.98       500
+           Karachay-Balkar       0.99      0.97      0.98       500
+                Karakalpak       1.00      0.97      0.98       500
+                 Kashubian       0.98      0.99      0.99       500
+                    Kazakh       1.00      1.00      1.00       500
+               Kinyarwanda       0.97      0.97      0.97       500
+                   Kirghiz       1.00      0.99      0.99       500
+                      Komi       0.92      0.91      0.92       500
+              Komi-Permyak       0.92      0.91      0.92       500
+                   Konkani       0.97      0.97      0.97       500
+                    Korean       1.00      0.99      0.99       500
+                   Kurdish       0.99      0.97      0.98       500
+                    Ladino       0.99      0.97      0.98       500
+                       Lao       0.76      0.72      0.74       500
+                 Latgalian       0.99      0.98      0.99       500
+                     Latin       0.96      0.97      0.96       500
+                   Latvian       0.98      0.97      0.98       500
+                  Lezghian       0.99      0.97      0.98       500
+                  Ligurian       0.99      0.97      0.98       500
+                 Limburgan       0.97      0.98      0.98       500
+                   Lingala       0.96      0.96      0.96       500
+          Literary Chinese       0.97      1.00      0.98       500
+                Lithuanian       1.00      0.99      0.99       500
+            Livvi-Karelian       0.98      0.99      0.98       500
+                    Lojban       1.00      1.00      1.00       500
+                   Lombard       0.97      0.96      0.97       500
+                Low German       0.98      0.98      0.98       500
+             Lower Sorbian       0.98      0.98      0.98       500
+                   Luganda       1.00      0.98      0.99       500
+             Luxembourgish       0.99      0.97      0.98       500
+                Macedonian       1.00      0.99      0.99       500
+                  Maithili       0.97      0.94      0.96       500
+                  Malagasy       1.00      1.00      1.00       500
+                     Malay       0.95      0.94      0.94       500
+                 Malayalam       1.00      0.99      0.99       500
+                   Maltese       0.97      0.99      0.98       500
+                      Manx       0.99      0.99      0.99       500
+                     Maori       1.00      1.00      1.00       500
+                   Marathi       0.99      0.97      0.98       500
+               Mazanderani       0.97      0.98      0.97       500
+                  Min Dong       0.99      0.99      0.99       500
+               Minangkabau       1.00      1.00      1.00       500
+                Mingrelian       1.00      0.97      0.99       500
+                 Mirandese       0.99      0.98      0.99       500
+              Modern Greek       0.99      0.99      0.99       500
+                    Moksha       0.99      0.95      0.97       500
+                 Mongolian       0.99      0.99      0.99       500
+                     Narom       0.98      0.98      0.98       500
+                    Navajo       1.00      1.00      1.00       500
+                Neapolitan       0.97      0.97      0.97       500
+    Nepali (macrolanguage)       0.86      0.92      0.89       500
+                    Newari       0.98      1.00      0.99       500
+             Northern Luri       0.98      0.92      0.95       500
+             Northern Sami       0.99      0.98      0.99       500
+            Northern Sotho       0.97      0.98      0.98       500
+         Norwegian Nynorsk       0.99      0.99      0.99       500
+                   Occitan       0.94      0.94      0.94       500
+              Old English        0.99      0.97      0.98       500
+                     Oriya       0.96      0.96      0.96       500
+                     Oromo       0.98      0.97      0.98       500
+                  Ossetian       1.00      1.00      1.00       500
+           Palatine German       0.89      0.93      0.91       500
+                  Pampanga       0.96      0.96      0.96       500
+                Pangasinan       0.96      0.93      0.95       500
+                   Panjabi       1.00      0.99      0.99       500
+                Papiamento       1.00      0.97      0.99       500
+       Pennsylvania German       0.96      0.88      0.92       500
+                   Persian       0.92      0.98      0.95       500
+                    Picard       0.90      0.82      0.86       500
+                    Polish       0.99      1.00      0.99       500
+                Portuguese       0.94      0.98      0.96       500
+                    Pushto       0.99      0.96      0.98       500
+                   Quechua       0.98      0.96      0.97       500
+                Ripuarisch       0.99      0.96      0.97       500
+                  Romanian       0.98      0.99      0.99       500
+                   Romansh       0.98      0.98      0.98       500
+                   Russian       0.84      0.96      0.90       500
+                     Rusyn       0.98      0.97      0.98       500
+                Samogitian       1.00      1.00      1.00       500
+                  Sanskrit       0.98      0.99      0.99       500
+                 Sardinian       0.98      0.97      0.98       500
+            Saterfriesisch       1.00      0.99      0.99       500
+                     Scots       1.00      0.99      0.99       500
+           Scottish Gaelic       0.99      0.98      0.98       500
+                   Serbian       0.96      0.93      0.95       500
+            Serbo-Croatian       0.65      0.50      0.56       500
+                     Shona       0.96      0.98      0.97       500
+                  Sicilian       0.98      0.99      0.99       500
+                  Silesian       1.00      0.99      1.00       500
+                    Sindhi       0.99      0.98      0.98       500
+                   Sinhala       0.83      0.83      0.83       500
+                    Slovak       1.00      1.00      1.00       500
+                   Slovene       0.99      0.99      0.99       500
+                    Somali       0.96      0.96      0.96       500
+         South Azerbaijani       0.99      1.00      1.00       500
+                   Spanish       0.82      0.89      0.85       500
+                    Sranan       1.00      0.98      0.99       500
+          Standard Chinese       0.94      0.97      0.96       500
+                 Sundanese       1.00      0.97      0.98       500
+   Swahili (macrolanguage)       0.94      0.97      0.95       500
+                   Swedish       0.99      1.00      1.00       500
+                   Tagalog       0.98      0.99      0.98       500
+                     Tajik       0.99      0.98      0.99       500
+                     Tamil       0.99      0.99      0.99       500
+         Tarantino dialect       0.99      0.97      0.98       500
+                     Tatar       0.99      0.99      0.99       500
+                    Telugu       0.99      0.96      0.98       500
+                     Tetum       0.96      0.97      0.97       500
+                      Thai       0.96      0.96      0.96       500
+                   Tibetan       1.00      1.00      1.00       500
+                    Tongan       1.00      0.99      1.00       500
+                    Tswana       0.98      0.98      0.98       500
+                      Tulu       0.99      0.98      0.98       500
+                   Turkish       0.95      0.98      0.97       500
+                   Turkmen       0.98      1.00      0.99       500
+                     Tuvan       0.97      0.98      0.98       500
+                    Udmurt       0.99      0.97      0.98       500
+                    Uighur       1.00      0.98      0.99       500
+                 Ukrainian       0.99      0.99      0.99       500
+             Upper Sorbian       0.96      0.98      0.97       500
+                      Urdu       0.99      1.00      1.00       500
+                     Uzbek       1.00      0.99      0.99       500
+                  Venetian       0.99      0.98      0.98       500
+                      Veps       0.98      1.00      0.99       500
+                Vietnamese       1.00      0.99      1.00       500
+                    Vlaams       0.96      0.96      0.96       500
+                   Volapük       1.00      1.00      1.00       500
+                      Võro       0.99      0.98      0.98       500
+                   Walloon       1.00      0.99      0.99       500
+                     Waray       1.00      1.00      1.00       500
+                     Welsh       1.00      0.99      1.00       500
+           West Low German       0.95      0.97      0.96       500
+           Western Frisian       0.99      0.98      0.99       500
+              Western Mari       0.99      0.97      0.98       500
+           Western Panjabi       1.00      0.98      0.99       500
+                     Wolof       0.97      0.98      0.98       500
+                Wu Chinese       0.99      0.93      0.96       500
+                     Xhosa       0.98      0.97      0.97       500
+                     Yakut       0.99      0.99      0.99       500
+                   Yiddish       0.98      0.99      0.98       500
+                    Yoruba       0.94      0.96      0.95       500
+                    Zeeuws       0.96      0.95      0.95       500
+                       nan       1.00      1.00      1.00       500
+
+                  accuracy                           0.96    117500
+                 macro avg       0.97      0.96      0.96    117500
+              weighted avg       0.97      0.96      0.96    117500
+
