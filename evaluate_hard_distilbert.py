@@ -76,7 +76,7 @@ report = classification_report(
 
 # --- Save report ---
 os.makedirs("results", exist_ok=True)
-output_path = os.path.join("results", "transformers_hard_results.txt")
+output_path = os.path.join("results", "distilbert_hard_results.txt")
 
 with open(output_path, "w", encoding="utf-8") as f:
     f.write("=== Transformers Model Evaluation on Hard Dataset ===\n\n")
